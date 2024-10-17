@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Sindi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#10B981',
+                    },
+                    backgroundImage: {
+                        'gradient-light': 'linear-gradient(to bottom right, #F3E8FF, #FFFFFF)',
+                        'gradient-dark': 'linear-gradient(to bottom right, #4B0082, #000000)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom right, #ffffff, #fae8ff);
+        }
+        .dark body {
+            background-image: linear-gradient(to bottom right,  #000000, #000000);
+        }
+    </style>
+</head>
+<body class="font-sans transition-colors duration-300">
+    <header class="fixed w-full bg-primary bg-opacity-80 dark:bg-gray-800 dark:bg-opacity-80 shadow-md z-50 transition-colors duration-300">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-white dark:text-white">SHY</a>
+                <div class="flex items-center">
+                    <div class="hidden md:flex space-x-4 mr-6">
+                        <a href="#home" class="text-white dark:text-gray-300 hover:text-gray-200 dark:hover:text-white transition-colors duration-300">Home</a>
+                        <a href="#about" class="text-white dark:text-gray-300 hover:text-gray-200 dark:hover:text-white transition-colors duration-300">Tentang</a>
+                        <a href="#skills" class="text-white dark:text-gray-300 hover:text-gray-200 dark:hover:text-white transition-colors duration-300">Keahlian</a>
+                        <a href="#projects" class="text-white dark:text-gray-300 hover:text-gray-200 dark:hover:text-white transition-colors duration-300">Proyek</a>
+                        <a href="#contact" class="text-white dark:text-gray-300 hover:text-gray-200 dark:hover:text-white transition-colors duration-300">Kontak</a>
+                    </div>
+                    <button id="theme-toggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="pt-20">
+        <section id="home" class="min-h-[80vh] py-60 transition-colors duration-300">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 dark:text-white mb-8">Selamat Datang di Portofolio Saya</h1>
+                <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">Hallo!! Saya Sindi Handayani, seorang pengembang web dan desainer UI/UX</p>
+                <a href="#contact" class="bg-primary text-white py-2 px-6 rounded-full text-lg font-semibold hover:bg-primary-dark transition-colors duration-300">Hubungi Saya</a>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 transition-colors duration-300">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-8">Tentang Saya</h2>
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="sindihan.jpg" alt="Foto Profil" class="rounded-full w-64 h-64 mx-auto object-cover shadow-lg">
+                    </div>
+                    <div class="md:w-1/2 md:pl-10">
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                            Selamat datang di portofolio saya! Saya adalah seorang pengembang web dan desainer UI/UX yang bersemangat dalam menciptakan pengalaman digital yang menarik dan fungsional. Dengan keahlian dalam HTML, CSS, JavaScript, dan berbagai framework modern, saya selalu berusaha untuk menghasilkan solusi inovatif dan user-friendly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 transition-colors duration-300">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-8">Keahlian</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white bg-opacity-15 p-6 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <div class="text-5xl text-primary mb-4"><i class="fab fa-html5"></i></div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-600 dark:text-gray-300">HTML5</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Crafting the structure of web pages with semantic markup.</p>
+                    </div>
+                    <div class="bg-white  bg-opacity-15 p-6 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <div class="text-5xl text-primary mb-4"><i class="fab fa-css3-alt"></i></div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-600 dark:text-gray-300">CSS3</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Styling and animating web pages for a polished look.</p>
+                    </div>
+                    <div class="bg-white bg-opacity-15 p-6 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <div class="text-5xl text-primary mb-4"><i class="fab fa-cuttlefish"></i></div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-600 dark:text-gray-300">C++</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Building powerful and efficient applications.</p>
+                    </div> 
+                    <div class="bg-white bg-opacity-15 p-6 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <div class="text-5xl text-primary mb-4"><i class="fab fa-figma"></i></div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-600 dark:text-gray-300">Figma</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Designing user interfaces and prototypes.</p>
+                    </div>
+                    <div class="bg-white bg-opacity-15 p-6 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <div class="text-5xl text-primary mb-4"><i class="fas fa-paint-brush"></i></div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-600 dark:text-gray-300">Adobe Photoshop</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Creating stunning graphics and photo editing.</p>
+                    </div>
+                    <div class="bg-white bg-opacity-15 p-6 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <div class="flex justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+                                <path d="M14 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-6-6z"></path>
+                                <line x1="16" y1="2" x2="16" y2="14"></line>
+                                <line x1="12" y1="8" x2="16" y2="8"></line>
+                                <line x1="8" y1="12" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-600 dark:text-gray-300">Canva</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Designing stunning visuals with ease.</p>
+                    </div>
+                    <div class="bg-white bg-opacity-15 p-6 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <div class="text-5xl text-primary mb-4"><i class="fab fa-js"></i></div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-600 dark:text-gray-300">JavaScript</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Building interactive and dynamic web applications.</p>
+                    </div>
+                    <div class="bg-white  bg-opacity-15 p-6 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <div class="text-5xl text-primary mb-4"><i class="fab fa-react"></i></div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-600 dark:text-gray-300">React</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Creating efficient and reusable UI components.</p>
+                    </div>
+                    <div class="bg-white  bg-opacity-15 p-6 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <div class="text-5xl text-primary mb-4"><i class="fab fa-node-js"></i></div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-600 dark:text-gray-300">Node.js</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Developing scalable backend solutions and APIs.</p>
+                    </div>
+                    <div class="bg-white  bg-opacity-15 p-6 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <div class="text-5xl text-primary mb-4"><i class="fas fa-database"></i></div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-600 dark:text-gray-300">Databases</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Managing and optimizing data with SQL and NoSQL databases.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 transition-colors duration-300">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-8">Proyek Terbaru</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white  bg-opacity-15 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                        <img src="sindihan.jpg" alt="Proyek 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Proyek 1</h3>
+                            <p class="text-gray-600 dark:text-gray-300">Deskripsi singkat proyek 1. Jelaskan teknologi yang digunakan dan hasil yang dicapai.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white  bg-opacity-15 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                        <img src="sindihan.jpg" alt="Proyek 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Proyek 2</h3>
+                            <p class="text-gray-600 dark:text-gray-300">Deskripsi singkat proyek 2. Jelaskan tantangan yang dihadapi dan solusi yang diterapkan.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white  bg-opacity-15 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                        <img src="sindihan.jpg" alt="Proyek 3" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Proyek 3</h3>
+                            <p class="text-gray-600 dark:text-gray-300">Deskripsi singkat proyek 3. Highlight fitur utama dan impact dari proyek ini.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 transition-colors duration-300">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-8">Kontak Saya</h2>
+                <p class="text-center text-gray-600 dark:text-gray-300 mb-8">Jika Anda ingin berkolaborasi atau memiliki pertanyaan, silakan hubungi saya!</p>
+                <div class="flex justify-center">
+                    <form action="contact-form" action="#" method="POST" class="bg-white bg-opacity-15 p-8 rounded-lg shadow-lg w-full max-w-lg">
+                        <div class="mb-6">
+                            <label for="name" class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Nama</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-md bg-gray-300 dark bg-opacity-50 border-none focus:ring-2 focus:ring-white focus:bg-opacity-100 transition-colors duration-300" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-md bg-gray-300 dark bg-opacity-50 border-none focus:ring-2 focus:ring-white focus:bg-opacity-100 transition-colors duration-300" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Pesan</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 rounded-md bg-gray-300 dark bg-opacity-50 border-none focus:ring-2 focus:ring-white focus:bg-opacity-100 transition-colors duration-300" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary text-white py-2 px-6 rounded-full font-semibold hover:bg-primary-dark transition-colors duration-300">Kirim</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary bg-opacity-80 dark:bg-gray-800 dark:bg-opacity-80 py-6 transition-colors duration-300">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-white dark:text-gray-300">&copy; 2024 Sindi Handayani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle dark mode
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+
+        themeToggleBtn.addEventListener('click', () => {
+            htmlElement.classList.toggle('dark');
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah terkirim.');
+            this.reset();
+        });
+
+        // Intersection Observer for fade-in animation
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div > *').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
